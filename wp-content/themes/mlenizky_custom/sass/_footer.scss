@@ -1,0 +1,25 @@
+footer{
+	width:100%;
+	background-color: $color__brand-color-header;
+}
+
+h2{
+	color: $color__background-header;
+	text-align: center;
+	width: 100%;
+	margin:0;
+	padding: 2rem;
+}
+
+.social-links{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	width:100%;
+	margin:0;
+}
+.social-links li{
+	text-align: center;
+	list-style:none;
+	color:$color__background-header;
+}

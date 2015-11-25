@@ -285,6 +285,7 @@ big {
 --------------------------------------------------------------*/
 html {
   box-sizing: border-box;
+  font-size: 12px;
   font-size: 16px;
   font-size: 1rem;
   margin: 0; }
@@ -670,7 +671,20 @@ header {
           flex-direction: row;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  width: 100%; }
+
+#site-navigation a {
+  display: none;
+  text-decoration: none; }
+  @media (min-width: 801px) {
+    #site-navigation a {
+      display: inline-block;
+      color: white;
+      text-decoration: none; } }
+
+.container {
+  margin: 0 1rem; }
 
 .navigation ul {
   display: -webkit-flex;
@@ -679,13 +693,26 @@ header {
   list-style: none; }
 
 .navigation li {
+  display: none;
   text-decoration: none; }
+  @media (min-width: 801px) {
+    .navigation li {
+      display: inline-block; } }
 
 span {
   display: block; }
 
 h1 {
-  color: #F8E71C; }
+  color: #F8E71C;
+  margin-top: 0;
+  padding-bottom: 2rem; }
+
+h3 {
+  margin-top: .65rem; }
+
+.menu {
+  margin: 0;
+  padding: 0; }
 
 .arrow_box {
   position: relative;
@@ -705,9 +732,62 @@ h1 {
   border-width: 15px;
   margin-left: -20px; }
 
+footer {
+  width: 100%;
+  background-color: #F8E71C; }
+
 h2 {
   color: #007C9E;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1000px; }
+  width: 100%;
+  margin: 0;
+  padding: 2rem; }
+
+.social-links {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin: 0; }
+
+.social-links li {
+  text-align: center;
+  list-style: none;
+  color: #007C9E; }
+
+#headshot {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px; }
+
+p {
+  color: #007C9E;
+  text-align: center;
+  max-width: 60%;
+  margin: auto; }
+
+.about-me {
+  background: white; }
+
+.about-me:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: white;
+  border-width: 15px;
+  margin-left: -20px; }
+
+.mission {
+  background-color: red; }

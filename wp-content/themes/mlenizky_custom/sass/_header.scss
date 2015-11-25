@@ -7,14 +7,36 @@ color:$color__text-header;
 	display:flex;
 	flex-direction:row;
 	justify-content: space-between;
+	width:100%
 }
+
+
+#site-navigation a{
+	display:none;
+	text-decoration: none;
+		  @include desktop {
+    display:inline-block;
+    color:white;
+	text-decoration: none;
+   }
+}
+
+
+.container{
+	margin: 0 1rem;
+}
+
 .navigation ul{
 	display:flex;
 	list-style:none;
 }
 
 .navigation li{
+	display:none;
 		text-decoration: none;
+		  @include desktop {
+      display:inline-block;
+   }
 }
 
 span{
@@ -22,10 +44,18 @@ span{
 }
 
 h1{
-	color:$color__brand-color-header
+	color:$color__brand-color-header;
+	margin-top:0;
+	padding-bottom:2rem;
 }
 
-
+h3{
+	margin-top:.65rem;
+}
+.menu{
+	margin:0;
+	padding:0;
+}
 
 .arrow_box {
 	position: relative;
