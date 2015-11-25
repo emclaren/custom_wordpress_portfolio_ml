@@ -7,7 +7,11 @@
 
 get_header(); ?>
 
-	<!-- <div id="primary" class="content-area">
+
+<h2><?php echo ( CFS()->get('headline1')); ?><span>
+<?php echo ( CFS()->get('headline2')); ?></span></h2>
+ 
+<!-- 	<!-- <div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -18,6 +22,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
- -->
 
 <?php get_footer(); ?>

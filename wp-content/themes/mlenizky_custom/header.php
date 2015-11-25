@@ -17,12 +17,10 @@
 </head>
 <body <?php body_class(); ?>>
 	<header class="arrow_box" >
-	<div class="container">
+	<div class="container ">
 		<div class="navigation">
 			<nav id="site-navigation" class="navigation" role="navigation">
 				<h3>Michael J.P. Lenizky</h3>
-
-
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 			</nav>

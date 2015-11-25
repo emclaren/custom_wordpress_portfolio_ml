@@ -3,3 +3,30 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+
+
+form{
+	border:none;
+	border-radius: 0px;
+}
+
+
+input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], textarea{
+	background-color: #EDEDED;
+	border:none;
+	border-radius: 0px;
+	width: 100%;
+	color:#007C9E;
+	padding: 1.5rem 0 3rem 1rem;
+	margin:.5rem 0;
+}
+
+input[type=submit]{
+	color:#007C9E;
+	padding: 1rem 2rem;
+	margin: 3rem;
+	font-size: 1.5rem;
+	box-shadow:none;
+	border:gray;
+}

@@ -658,6 +658,27 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+form {
+  border: none;
+  border-radius: 0px; }
+
+input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], textarea {
+  background-color: #EDEDED;
+  border: none;
+  border-radius: 0px;
+  width: 100%;
+  color: #007C9E;
+  padding: 1.5rem 0 3rem 1rem;
+  margin: .5rem 0; }
+
+input[type=submit] {
+  color: #007C9E;
+  padding: 1rem 2rem;
+  margin: 3rem;
+  font-size: 1.5rem;
+  box-shadow: none;
+  border: gray; }
+
 header {
   background-color: #007C9E;
   color: #fff; }
@@ -769,8 +790,10 @@ h2 {
 p {
   color: #007C9E;
   text-align: center;
-  max-width: 60%;
   margin: auto; }
+
+.tagline {
+  padding: 2rem 1rem; }
 
 .about-me {
   background: white; }
@@ -791,3 +814,20 @@ p {
 
 .mission {
   background-color: red; }
+
+.skills {
+  background-color: #EDEDED; }
+
+.tagline:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: white;
+  border-width: 15px;
+  margin-left: -20px; }
