@@ -1,9 +1,9 @@
 /*!
-Theme Name: M Lenizky Custom Theme
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: EM
+Author: RED Academy
 Author URI: http://www.redacademy.com
-Description: A theme for M Lenizky's portfolio
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -286,7 +286,8 @@ big {
 html {
   box-sizing: border-box;
   font-size: 16px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  margin: 0; }
 
 *,
 *:before,
@@ -300,9 +301,7 @@ body {
 
 blockquote, q {
   quotes: "" ""; }
-  blockquote:before,
-  blockquote:after, q:before,
-  q:after {
+  blockquote:before, blockquote:after, q:before, q:after {
     content: ""; }
 
 hr {
@@ -358,7 +357,7 @@ input[type="submit"] {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: 0.6em 1em 0.4em;
+  padding: .6em 1em .4em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
   button:hover,
   input[type="button"]:hover,
@@ -366,8 +365,7 @@ input[type="submit"] {
   input[type="submit"]:hover {
     border-color: #ccc #bbb #aaa;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active,
-  button:focus,
+  button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
   input[type="reset"]:active,
@@ -414,14 +412,11 @@ a {
   color: royalblue; }
   a:visited {
     color: purple; }
-  a:hover,
-  a:focus,
-  a:active {
+  a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
     outline: thin dotted; }
-  a:hover,
-  a:active {
+  a:hover, a:active {
     outline: 0; }
 
 /* Menus */
@@ -471,9 +466,9 @@ a {
   .main-navigation ul {
     display: block; } }
 
-.site-main .comment-navigation,
-.site-main .posts-navigation,
-.site-main .post-navigation {
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden; }
 
@@ -662,3 +657,57 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+header {
+  background-color: #007C9E;
+  color: #fff; }
+
+.navigation {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.navigation ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none; }
+
+.navigation li {
+  text-decoration: none; }
+
+span {
+  display: block; }
+
+h1 {
+  color: #F8E71C; }
+
+.arrow_box {
+  position: relative;
+  background: #007C9E; }
+
+.arrow_box:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: #007C9E;
+  border-width: 15px;
+  margin-left: -20px; }
+
+h2 {
+  color: #007C9E;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px; }
