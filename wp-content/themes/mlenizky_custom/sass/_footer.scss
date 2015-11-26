@@ -1,6 +1,7 @@
 footer{
 	width:100%;
 	background-color: $color__brand-color-header;
+	padding-bottom: 1rem;
 }
 
 h2{
@@ -9,17 +10,27 @@ h2{
 	width: 100%;
 	margin:0;
 	padding: 2rem;
+	 @include tablet {
+   max-width:400px;
+   text-align:left;
+   margin:auto;
+ 	span{
+ 		text-align:right;
+ 	}
+   }
 }
 
 .social-links{
 	display:flex;
 	flex-direction:row;
-	justify-content:center;
+	justify-content:space-around;
 	width:100%;
 	margin:0;
+	padding:0;
 }
 .social-links li{
 	text-align: center;
 	list-style:none;
 	color:$color__background-header;
+	font-size:4rem;
 }

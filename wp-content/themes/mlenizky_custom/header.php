@@ -28,7 +28,7 @@
 
 		</div>
 		<h1><?php echo ( CFS()->get('about_me')); ?></h1>
-
+	</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

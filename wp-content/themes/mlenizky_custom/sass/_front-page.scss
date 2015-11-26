@@ -1,13 +1,6 @@
 
 
 
-#headshot{
-	border-radius: 50%;
-width:300px;
-height:300px;
-
-}
-
 
 p{
 	color: $color__background-header;
@@ -16,7 +9,11 @@ p{
 }
 
 .tagline{
-padding: 2rem 1rem;
+padding: 3rem 1rem;
+		  @include tablet {
+   max-width:70%;
+   margin:0 auto;
+   }
 
 }
 .about-me{
@@ -39,16 +36,37 @@ padding: 2rem 1rem;
 	margin-left: -20px;
 }
 
-.mission{
-	background-color: red;
-}
 
 .skills{
 	background-color:#EDEDED;
+	
+	padding:3rem;
 }
 
+.skills-container{
+	padding-bottom:3rem;
+	overflow:wrap;
+	text-align: center;
+	margin: 0 auto;
+	h4{
+		margin:1rem;
+	}
+	p{
+		color:black;
+		text-align:left;
+	}
+	i{
+		font-size:3rem;
+		color: $color__background-header;
+	}
+}
 
-.tagline:after {
+.skills_flag{
+	background: #EDEDED;
+}
+//below should be replaced with smaller code since it repeats the arrow code
+
+.skills_flag:after {
 	top: 100%;
 	left: 50%;
 	border: solid transparent;
@@ -58,7 +76,45 @@ padding: 2rem 1rem;
 	position: absolute;
 	pointer-events: none;
 	border-color: rgba(136, 183, 213, 0);
-	border-top-color: white;
+	border-top-color: #EDEDED;
 	border-width: 15px;
 	margin-left: -20px;
+}
+
+
+
+
+
+h4{
+	color: $color__background-header;
+}
+
+
+.about{
+text-align: center;
+padding: 4rem 1rem;
+		  @include tablet {
+   max-width:70%;
+   margin:0 auto;
+   }
+}
+
+#headshot{
+border-radius:50%;
+width:200px;
+height:200px;
+overflow:hidden;
+margin-bottom: 3rem;
+		  @include tablet {
+   width:250px;
+   height: 250px;
+   margin-bottom: 2rem;
+   }
+}
+
+.responsive-menu{
+	ul{
+		margin:0;
+		padding:0;
+	}
 }

@@ -7,7 +7,7 @@
 
 ?>
 <footer>
-<h2> Have any questions? <span>Shoot me a message! </span></h2>
+<h2 class="footer-line1"> Have any questions? <span class="footer-line2">Shoot me a message! </span></h2>
 <ul class="social-links">
 <li><i class="fa fa-facebook"></i> </li>
 <li><i class="fa fa-twitter"></i></li>

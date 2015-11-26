@@ -20,6 +20,7 @@ input[type=text], input[type=email], input[type=url], input[type=password], inpu
 	color:#007C9E;
 	padding: 1.5rem 0 3rem 1rem;
 	margin:.5rem 0;
+	font-size:36px;
 }
 
 input[type=submit]{
@@ -28,5 +29,5 @@ input[type=submit]{
 	margin: 3rem;
 	font-size: 1.5rem;
 	box-shadow:none;
-	border:gray;
+	border-radius: 0px;
 }

@@ -2,10 +2,10 @@
 # Elements
 --------------------------------------------------------------*/
 
-html {
+html, body  {
 	box-sizing: border-box;
-	font-size:12px;
-	@include font-size(1);
+	font-size:16px;
+	// @include font-size(1);
 	margin:0;
 }
 
