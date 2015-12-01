@@ -7,49 +7,38 @@
 
 get_header(); ?>
 
-
-this is my archive portfolio page!!!!!!!!!
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	<div class="container tagline">
+		<p><?php echo esc_html( CFS()->get('headline')); ?></p>
+	</div>
 
 
-
-
+<section class="skills ">
 <?php 
-$query = new WP_Query( array( 'post_type' => 'portfolio' ) ); ?>
+$query = new WP_Query( array( 'post_type' => 'project' ) ); ?>
 
 
 <?php if($query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
 
-<div class= "skills-container">
 
-<?php echo ( CFS()->get('icon_code')); ?>
-<h4><?php echo ( CFS()->get('skill_title')); ?></h4>
-<p><?php echo ( CFS()->get('skill_description')); ?></p>
-</div>
+
+	<div class= "skills-container col">
+		<h1><?php echo get_the_title(get_the_ID()); ?></h1>
+		 <?php echo get_the_post_thumbnail(get_the_ID()); ?> 
+		<p><?php echo ( CFS()->get('project_description')); ?></p> 
+		<h4>Read the Case Study </h4>
+	</div>
 
 <?php endwhile; endif; wp_reset_postdata(); ?>
+
 </section>
+
+
+<?php  ?>
+
+
+
+
+
 
 
 <?php get_footer(); ?>

@@ -7,6 +7,10 @@
 
 get_header(); ?>
 
+
+<div id="pt-main" class="pt-perspective">
+	<div class="pt-page pt-page-1">
+		
 	<div class="container tagline">
 		<p><?php echo esc_html( CFS()->get('tagline')); ?></p>
 	</div>
@@ -27,9 +31,9 @@ $query = new WP_Query( array( 'post_type' => 'skill' ) ); ?>
 
 
 	<div class= "skills-container col">
-		<?php echo ( CFS()->get('icon_code')); ?>
-		<h4><?php echo ( CFS()->get('skill_title')); ?></h4>
-		 <p><?php echo ( CFS()->get('skill_description')); ?></p> 
+		<img src="<?php echo ( CFS()->get('icon')); ?>">
+		<h4><?php echo get_the_title(get_the_ID()); ?></h4>
+		<p><?php echo ( CFS()->get('skill_description')); ?></p> 
 	</div>
 
 <?php endwhile; endif; wp_reset_postdata(); ?>

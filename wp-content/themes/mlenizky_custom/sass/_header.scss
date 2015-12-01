@@ -1,3 +1,5 @@
+
+
 header {
 background-color: $color__background-header;
 color:$color__text-header;
@@ -7,20 +9,39 @@ color:$color__text-header;
 	display:flex;
 	flex-direction:row;
 	justify-content: space-between;
-	width:100%
+	width:100%;
+	padding:1rem 1rem;
+	position: fixed;
+	 z-index: 150;
+	background-color: rgba(0, 124, 158, .8);
+// background: rgba(0,124,158,0.82);
+// background: -moz-linear-gradient(top, rgba(0,124,158,0.82) 0%, rgba(0,124,158,0) 100%);
+// background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,124,158,0.82)), color-stop(100%, rgba(0,124,158,0)));
+// background: -webkit-linear-gradient(top, rgba(0,124,158,0.82) 0%, rgba(0,124,158,0) 100%);
+// background: -o-linear-gradient(top, rgba(0,124,158,0.82) 0%, rgba(0,124,158,0) 100%);
+// background: -ms-linear-gradient(top, rgba(0,124,158,0.82) 0%, rgba(0,124,158,0) 100%);
+// background: linear-gradient(to bottom, rgba(0,124,158,0.82) 0%, rgba(0,124,158,0) 100%);
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007c9e', endColorstr='#007c9e', GradientType=0 );
 }
-
 
 #site-navigation a{
 	display:none;
 	text-decoration: none;
+	font-family: 'Open Sans';
+	padding: .65rem;
+	font-size: 1.1rem;
 		  @include desktop {
     display:inline-block;
     color:white;
-	text-decoration: none;
+
+	margin-top:1rem;
    }
 }
 
+li.current-menu-item a {
+text-decoration: underline;
+
+}
 
 .container{
 	margin: 0 1rem;
@@ -29,6 +50,7 @@ color:$color__text-header;
 .navigation ul{
 	display:flex;
 	list-style:none;
+	margin-bottom: 0;
 }
 
 .navigation li{
@@ -46,12 +68,25 @@ span{
 
 h1{
 	color:$color__brand-color-header;
-	margin:0;
+	font-family: 'Open Sans';
+	font-weight:600;
+
+	width:100%;
 	padding-bottom:2rem;
+		  @include desktop {
+     font-size:2.5rem;
+     padding: 5rem 0;
+   }
 }
 
 h3{
 	margin-top:.65rem;
+	font-weight: 400;
+	font-size: 1.1rem;
+	font-family: 'Open Sans';
+	  @include desktop {
+    margin-top: 1rem;
+   }
 }
 .menu{
 	margin:0;
@@ -73,6 +108,26 @@ h3{
 	pointer-events: none;
 	border-color: rgba(136, 183, 213, 0);
 	border-top-color: $color__background-header;
+	border-width: 15px;
+	margin-left: -20px;
+}
+
+
+.arrow_box2 {
+	position: fixed;
+	background: rgba(0, 124, 158, 1);
+}
+.arrow_box2:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: rgba(0, 124, 158, 1);
 	border-width: 15px;
 	margin-left: -20px;
 }
