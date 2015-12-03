@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  * 
- * @package RED_Starter_Theme
+ * @package mlenizky_custom_theme
  */
 ?><!DOCTYPE html>
 
@@ -18,7 +18,7 @@
 <body <?php body_class(); ?>>
 	<header>
 		<!-- Fixed Navigation Bar -->
-		<div class="fixed-nav-bar arrow-box floating-arrow" id="nav-bar">
+		<div class="fixed-nav-bar  arrow-box floating-arrow" id="nav-bar">
 			<nav id="site-navigation" class="navigation " role="navigation">
 				<a href="about" class="home-link "> 
 					<h3>Michael J.P. Lenizky</h3>

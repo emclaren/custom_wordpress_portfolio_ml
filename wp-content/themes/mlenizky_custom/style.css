@@ -1910,6 +1910,13 @@ span {
   border-width: 15px;
   margin-left: -20px; }
 
+.white-arrow {
+  position: relative;
+  background: transparent; }
+
+.white-arrow:after {
+  border-top-color: white; }
+
 .floating-arrow {
   position: fixed;
   background: #007C9E; }
@@ -1960,32 +1967,15 @@ p {
   font-family: 'Roboto';
   font-weight: normal; }
 
-.tagline {
+.intro-quote {
   padding: 4rem 1rem 5rem 1rem; }
   @media (min-width: 600px) {
-    .tagline {
+    .intro-quote {
       max-width: 70%;
       margin: 0 auto; } }
   @media (min-width: 801px) {
-    .tagline {
+    .intro-quote {
       max-width: 50%; } }
-
-.about-me {
-  background: white; }
-
-.about-me:after {
-  top: 100%;
-  left: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: rgba(136, 183, 213, 0);
-  border-top-color: white;
-  border-width: 15px;
-  margin-left: -20px; }
 
 .skills {
   background-color: #EDEDED;
@@ -2015,27 +2005,6 @@ p {
     color: #F8E71C; }
   .skills-container:hover p {
     color: white; }
-
-.skills_flag {
-  background: #EDEDED; }
-
-.skills-image {
-  width: 175px;
-  height: 155px; }
-
-.skills_flag:after {
-  top: 100%;
-  left: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: rgba(136, 183, 213, 0);
-  border-top-color: #EDEDED;
-  border-width: 15px;
-  margin-left: -20px; }
 
 h4 {
   color: #007C9E; }

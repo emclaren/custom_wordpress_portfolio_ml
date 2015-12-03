@@ -141,9 +141,28 @@ span{
 	margin-left: -20px;
 }
 
+
+.white-arrow{
+	position:relative;
+	background:transparent;
+}
+
+.white-arrow:after {
+	border-top-color: white;	
+}
+
 .floating-arrow{
 	position:fixed;
 	background: $color__brand-color1;
 }
+
+// .gray-arrow{
+// 	position:relative;
+// 	background:transparent;
+// }
+
+// .gray-arrow:after {
+// 	border-top-color: 	
+// }
 
 

@@ -6,7 +6,7 @@
  */
 
 ?>
-<div class="arrow_box about-me"></div>
+<!-- <div class="arrow_box about-me"></div> -->
 <footer>
 	<div class="large-screen">
 		<h2 class="footer-line1"> Have any questions? <span class="footer-line2">Shoot me a message! </span></h2>

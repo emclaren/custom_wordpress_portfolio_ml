@@ -7,7 +7,7 @@ p{
 	font-weight: normal;
 }
 
-.tagline{
+.intro-quote{
 padding: 4rem 1rem 5rem 1rem;
 			  @include tablet {
    max-width:70%;
@@ -18,25 +18,28 @@ padding: 4rem 1rem 5rem 1rem;
    }
 
 }
-.about-me{
-	background: white;
-}
-//below should be replaced with smaller code since it repeats the arrow code
 
-.about-me:after {
-	top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(136, 183, 213, 0);
-	border-top-color: white;
-	border-width: 15px;
-	margin-left: -20px;
-}
+
+// .arrow-box {
+// 	position: relative;
+// 	background: $color__brand-color1;
+// }
+// .arrow-box:after {
+// 	top: 100%;
+// 	left: 50%;
+// 	border: solid transparent;
+// 	content: " ";
+// 	height: 0;
+// 	width: 0;
+// 	position: absolute;
+// 	pointer-events: none;
+// 	border-color: rgba(136, 183, 213, 0);
+// 	border-top-color: $color__brand-color1;
+// 	border-width: 15px;
+// 	margin-left: -20px;
+// }
+
+
 
 
 .skills{
@@ -78,30 +81,30 @@ transition: background-color 400ms ease-out 10ms; /*padding 0.8s linear;*/
 	}
 }
 
-.skills_flag{
-	background: #EDEDED;
-}
+// .skills_flag{
+// 	background: #EDEDED;
+// }
 
-.skills-image{
-	width:175px;
-	height:155px;
-}
-//below should be replaced with smaller code since it repeats the arrow code
+// .skills-image{
+// 	width:175px;
+// 	height:155px;
+// }
+// //below should be replaced with smaller code since it repeats the arrow code
 
-.skills_flag:after {
-	top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(136, 183, 213, 0);
-	border-top-color: #EDEDED;
-	border-width: 15px;
-	margin-left: -20px;
-}
+// .skills_flag:after {
+// 	top: 100%;
+// 	left: 50%;
+// 	border: solid transparent;
+// 	content: " ";
+// 	height: 0;
+// 	width: 0;
+// 	position: absolute;
+// 	pointer-events: none;
+// 	border-color: rgba(136, 183, 213, 0);
+// 	border-top-color: #EDEDED;
+// 	border-width: 15px;
+// 	margin-left: -20px;
+// }
 
 
 h4{
