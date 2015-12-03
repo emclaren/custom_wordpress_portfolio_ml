@@ -1,103 +1,133 @@
 
 
 header {
-background-color: $color__background-header;
-color:$color__text-header;
-}
-
-.navigation {
-	display:flex;
-	flex-direction:row;
-	justify-content: space-between;
-	width:100%;
-	padding:1rem 1rem;
-	position: fixed;
-	 z-index: 150;
-	background-color: rgba(0, 124, 158, .8);
-// background: rgba(0,124,158,0.82);
-// background: -moz-linear-gradient(top, rgba(0,124,158,0.82) 0%, rgba(0,124,158,0) 100%);
-// background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,124,158,0.82)), color-stop(100%, rgba(0,124,158,0)));
-// background: -webkit-linear-gradient(top, rgba(0,124,158,0.82) 0%, rgba(0,124,158,0) 100%);
-// background: -o-linear-gradient(top, rgba(0,124,158,0.82) 0%, rgba(0,124,158,0) 100%);
-// background: -ms-linear-gradient(top, rgba(0,124,158,0.82) 0%, rgba(0,124,158,0) 100%);
-// background: linear-gradient(to bottom, rgba(0,124,158,0.82) 0%, rgba(0,124,158,0) 100%);
-// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007c9e', endColorstr='#007c9e', GradientType=0 );
-}
-
-#site-navigation a{
-	display:none;
-	text-decoration: none;
-	font-family: 'Open Sans';
-	padding: .65rem;
-	font-size: 1.1rem;
-		  @include desktop {
-    display:inline-block;
-    color:white;
-
-	margin-top:1rem;
-   }
-}
-
-li.current-menu-item a {
-text-decoration: underline;
-
+	background-color: $color__brand-color1;
+	color:$color__brand-color2;
 }
 
 .container{
 	margin: 0 1rem;
 }
 
+.large-screen{
+	max-width: 1024px;
+	margin: auto;
+}
+
+//Nav Menu Styling
+.navigation {
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+	width:100%;
+	padding:1rem 1rem 0 1rem;
+	z-index: 999;
+		@include desktop {
+		max-width:1024px;
+	}
+}
+
+.test{
+	@include desktop {
+		max-width: 1024px;
+		margin:auto;
+		text-align:center;
+	}
+
+}
+
+//Left-hand Nav Menu Text Styling
+.home-link{
+	padding:0;
+	h3{
+		margin-top:.65rem;
+		font-weight: 400;
+		font-size: 1.1rem;
+		font-family: 'Open Sans';
+		@include desktop {
+			margin-top: 1rem;
+		}
+	}
+}
+
+
+//Right-hand Nav Menu Styling
+.menu a{
+	padding: .65rem .65rem 0 .65rem;
+}
+
 .navigation ul{
 	display:flex;
 	list-style:none;
 	margin-bottom: 0;
-}
-
-.navigation li{
-	display:none;
+	li{
+		display:none;
 		text-decoration: none;
-		  @include desktop {
-      display:inline-block;
-   }
+		@include desktop {
+			display:inline-block;
+		}
+	}
 }
 
+#site-navigation a{
+	display:none;
+	text-decoration: none;
+	font-family: 'Open Sans';
+	font-size: 1.1rem;
+	color:white;
+	display:block;
+	@include desktop {
+		display:inline-block;
+		margin-top:1rem;
+		&:hover{
+			font-size: 1.22rem;
+		}
+	}
+}
+
+//Yellow border on selected page
+.current_page_item{
+	@include desktop {
+		border-bottom: 2px $color__brand-color2 solid;
+	}
+}
+
+//Keep nav bar fixed at top of page
+.fixed-nav-bar {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background-color: orange;
+
+}
+
+
+
+//Main Site Title Styling
 span{
 	display: block;
-
 }
 
-h1{
-	color:$color__brand-color-header;
+.site-title{
+	color:$color__brand-color2;
 	font-family: 'Open Sans';
 	font-weight:600;
-
-	width:100%;
-	padding-bottom:2rem;
-		  @include desktop {
-     font-size:2.5rem;
-     padding: 5rem 0;
-   }
+	padding: 4rem 0 8rem 0;
+	@include desktop {
+		font-size:2.5rem;
+		padding: 5rem 0;
+	}
 }
 
-h3{
-	margin-top:.65rem;
-	font-weight: 400;
-	font-size: 1.1rem;
-	font-family: 'Open Sans';
-	  @include desktop {
-    margin-top: 1rem;
-   }
-}
-.menu{
-	margin:0;
-	padding:0;
-}
 
-.arrow_box {
+//CSS for the triangle points between sections
+
+.arrow-box {
 	position: relative;
-	background: $color__background-header;
+	background: $color__brand-color1;
 }
-.arrow_box:after {
+.arrow-box:after {
 	top: 100%;
 	left: 50%;
 	border: solid transparent;
@@ -107,27 +137,14 @@ h3{
 	position: absolute;
 	pointer-events: none;
 	border-color: rgba(136, 183, 213, 0);
-	border-top-color: $color__background-header;
+	border-top-color: $color__brand-color1;
 	border-width: 15px;
 	margin-left: -20px;
 }
 
+.floating-arrow{
+	position:fixed;
+	background: $color__brand-color1;
+}
 
-.arrow_box2 {
-	position: fixed;
-	background: rgba(0, 124, 158, 1);
-}
-.arrow_box2:after {
-	top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(136, 183, 213, 0);
-	border-top-color: rgba(0, 124, 158, 1);
-	border-width: 15px;
-	margin-left: -20px;
-}
+

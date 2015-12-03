@@ -1,18 +1,15 @@
-console.log("yo!!!")
 
 jQuery(document).ready(function($) {
 
-// var  mn = $(".main-nav");
-//     mns = "main-nav-scrolled";
-//     // hdr = $('header').height();
-
-// $(window).scroll(function() {
-//   if( $(this).scrollTop() > hdr ) {
-//     mn.addClass(mns);
-//   } else {
-//     mn.removeClass(mns);
-//   }
-// });
-
-// });
-}
+$( document.body ).click(function() {
+  if ( $( "#DivB" ).is( ":visible" ) ) {
+   $( "#DivB" ).slideUp(700).then(
+   $("body").fadeOut(2000);).then(
+   $("body").fadeIn(2000);)
+  } else {
+    
+    $( "#DivB" ).slideDown( "slow" );
+    
+  }
+});
+});

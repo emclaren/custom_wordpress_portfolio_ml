@@ -4,8 +4,8 @@
  * 
  * @package RED_Starter_Theme
  */
-
 ?><!DOCTYPE html>
+
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -15,19 +15,21 @@
 	<?php wp_head(); ?>
 </head>
 
-
 <body <?php body_class(); ?>>
-	<header >
-		
-			<nav id="site-navigation" class="navigation arrow_box2" role="navigation">
-				<h3>Michael J.P. Lenizky</h3>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+	<header>
+		<div class="test">
+		<div class="fixed-nav-bar" id="DivA">
+			<nav id="site-navigation" class="navigation arrow-box floating-arrow" role="navigation">
+				<a href="about" class="home-link "> 
+					<h3>Michael J.P. Lenizky</h3>
+				</a>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>	
 			</nav>
 		</div>
-		<div class="container arrow_box" >
-		
-		<h1><?php echo ( CFS()->get('about_me')); ?></h1>
-</div>
-</header><!-- #masthead -->
+	</div>
+		<div class="container arrow-box" >
+			<h1 class="site-title large-screen"><?php echo ( CFS()->get('header_title')); ?></h1>
+		</div>
+	</header>
 
 <div id="content" class="site-content">

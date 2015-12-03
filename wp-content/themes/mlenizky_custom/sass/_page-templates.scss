@@ -31,3 +31,112 @@ input[type=submit]{
 	box-shadow:none;
 	border-radius: 0px;
 }
+
+//Portfolio page
+
+
+
+.portfolio-container{
+margin: 1rem;
+h1{
+	color:#0198E1;
+	text-align: center;
+font-size:4rem;
+
+font-family: 'Open Sans'; }
+
+p{
+	color:black;
+	padding:1rem;
+}
+
+img{
+	display: block;
+    max-width:250px;
+    max-height:250px;
+    margin:0 3rem 1rem 3rem ;
+    
+}
+}
+
+
+.portfolio-tagline{
+	border-bottom: 4px solid yellow;
+}
+
+.portfolio-project{
+	text-align: center;
+	margin: 0 auto;
+	  @include tablet {
+display:flex;
+border-bottom: 2px solid yellow;
+}
+}
+.side-text{
+	p{
+		 @include tablet {
+	text-align: left;
+}
+	}
+}
+
+
+
+.container-large{
+	max-width: 1024px;
+	margin: 0 auto;
+
+}
+
+
+
+.arrow_box3 {
+	position: relative;
+	
+	border-bottom: 3px solid #f50ae5;
+}
+.arrow_box3:after, .arrow_box3:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box3:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: white;
+	border-width: 20px;
+	margin-left: -20px;
+}
+.arrow_box3:before {
+	border-color: rgba(245, 10, 229, 0);
+	border-top-color: #f50ae5;
+	border-width: 15px;
+	margin-left: -20px;
+}
+
+
+
+
+// .arrow_box2 {
+// 	position: fixed;
+// 	background: rgba(0, 124, 158, 1);
+// }
+// .arrow_box2:after {
+// 	top: 100%;
+// 	left: 50%;
+// 	border: solid transparent;
+// 	content: " ";
+// 	height: 0;
+// 	width: 0;
+// 	position: absolute;
+// 	pointer-events: none;
+// 	border-color: rgba(136, 183, 213, 0);
+// 	border-top-color: rgba(0, 124, 158, 1);
+// 	border-width: 15px;
+// 	margin-left: -20px;
+// }

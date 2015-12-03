@@ -8,10 +8,13 @@ p{
 }
 
 .tagline{
-padding: 3rem 1rem;
-		  @include tablet {
+padding: 4rem 1rem 5rem 1rem;
+			  @include tablet {
    max-width:70%;
    margin:0 auto;
+   }
+		  @include desktop {
+   max-width:50%;
    }
 
 }
@@ -39,20 +42,23 @@ padding: 3rem 1rem;
 .skills{
 	background-color:#EDEDED;
 	
-	padding:3rem;
+	padding:5rem 3rem;
 }
 
 .skills-container{
-	padding-bottom:3rem;
+transition: background-color 400ms ease-out 10ms; /*padding 0.8s linear;*/
+	padding: 2rem;
 	overflow:wrap;
 	text-align: center;
 	margin: 0 auto;
 	h4{
 		margin:1rem;
+		font-size:1.3rem;
+		font-family: 'open sans'
 	}
 	p{
 		color:black;
-		text-align:left;
+	
 	}
 	i{
 		font-size:3rem;
@@ -60,8 +66,25 @@ padding: 3rem 1rem;
 	}
 }
 
+.skills-container:hover{
+	background-color: rgba(0, 124, 158, 1);
+	// padding:.5rem;
+	h4{
+		font-size: 1.4rem;
+		color:  #F8E71C;
+	}
+	p{
+		color:white;
+	}
+}
+
 .skills_flag{
 	background: #EDEDED;
+}
+
+.skills-image{
+	width:175px;
+	height:155px;
 }
 //below should be replaced with smaller code since it repeats the arrow code
 
@@ -100,7 +123,9 @@ border-radius:50%;
 width:200px;
 height:200px;
 overflow:hidden;
-margin-bottom: 3rem;
+margin:0 auto 2rem auto;
+text-align: center;
+
 		  @include tablet {
    width:250px;
    height: 250px;
