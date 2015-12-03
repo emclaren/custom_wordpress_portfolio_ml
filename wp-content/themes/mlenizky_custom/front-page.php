@@ -12,8 +12,8 @@ get_header(); ?>
 		<p><?php echo esc_html( CFS()->get('intro_quote')); ?></p>
 	</div>
 
-	<section class="skills  ">
-		<div class="grid-3_sm-2_xs-1 large-screen">
+	<section class="skills  arrow-box gray-arrow ">
+		<div class="grid-3_sm-2_xs-1 large-screen ">
 			<?php $query = new WP_Query( array( 'post_type' => 'skill' ) ); ?>
 			<?php if($query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
 			<div class= "skills-container col">
@@ -24,7 +24,6 @@ get_header(); ?>
 		<?php endwhile; endif; wp_reset_postdata(); ?>
 	</div>
 </section>
-<div class=" skills_flag"></div>
 <section class="container about">
 
 	<div id="headshot">

@@ -8,7 +8,7 @@
 ?>
 <!-- <div class="arrow_box about-me"></div> -->
 <footer>
-	<div class="large-screen">
+	<div class="large-screen arrow-box white-arrow-footer">
 		<h2 class="footer-line1"> Have any questions? <span class="footer-line2">Shoot me a message! </span></h2>
 		<ul class="social-links">
 			<li><i class="fa fa-facebook"></i> </li>

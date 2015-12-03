@@ -1915,11 +1915,29 @@ span {
   background: transparent; }
 
 .white-arrow:after {
-  border-top-color: white; }
+  border-top-color: white;
+  z-index: 20; }
 
 .floating-arrow {
   position: fixed;
   background: #007C9E; }
+
+.gray-arrow {
+  position: relative;
+  background: transparent; }
+
+.gray-arrow:after {
+  border-top-color: #EDEDED;
+  z-index: 20; }
+
+.white-arrow-footer {
+  position: relative;
+  background: transparent; }
+
+.white-arrow-footer:after {
+  border-top-color: white;
+  z-index: 20;
+  top: 0%; }
 
 footer {
   width: 100%;
