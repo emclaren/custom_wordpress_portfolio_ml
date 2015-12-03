@@ -17,19 +17,19 @@
 
 <body <?php body_class(); ?>>
 	<header>
-		<div class="test">
-		<div class="fixed-nav-bar" id="DivA">
-			<nav id="site-navigation" class="navigation arrow-box floating-arrow" role="navigation">
+		<!-- Fixed Navigation Bar -->
+		<div class="fixed-nav-bar arrow-box floating-arrow" id="nav-bar">
+			<nav id="site-navigation" class="navigation " role="navigation">
 				<a href="about" class="home-link "> 
 					<h3>Michael J.P. Lenizky</h3>
 				</a>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>	
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav>
 		</div>
-	</div>
+		<!--Static Header -->
 		<div class="container arrow-box" >
 			<h1 class="site-title large-screen"><?php echo ( CFS()->get('header_title')); ?></h1>
 		</div>
 	</header>
 
-<div id="content" class="site-content">
+	<div id="content" class="site-content">
