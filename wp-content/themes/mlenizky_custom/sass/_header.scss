@@ -10,10 +10,11 @@ header {
 }
 
 .large-screen{
-	max-width: 1024px;
-	margin: auto;
+	@include desktop {
+		max-width: 1024px;
+		margin: auto;
+	}
 }
-
 //Nav Menu Styling
 .navigation {
 	display:flex;
@@ -94,7 +95,7 @@ header {
 	left: 0;
 	width: 100%;
 	height: 60px;
-	background-color: #00a087;
+	background-color: $color__brand-color1;
 
 }
 
@@ -112,70 +113,10 @@ span{
 	color:$color__brand-color2;
 	font-family: 'Open Sans';
 	font-weight:600;
-	padding: 4rem 0 8rem 0;
+	padding: 8rem 0 8rem 0;
 	@include desktop {
 		font-size:2.5rem;
 		padding: 5rem 0;
 	}
-}
-
-
-//CSS for the triangle points between sections
-
-.arrow-box {
-	position: relative;
-	background: $color__brand-color1;
-}
-.arrow-box:after {
-	top: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(136, 183, 213, 0);
-	border-top-color: $color__brand-color1;
-	border-width: 15px;
-	margin-left: -20px;
-}
-
-
-.white-arrow{
-	position:relative;
-	background:transparent;
-}
-
-.white-arrow:after {
-	border-top-color: white;
-	z-index:20;	
-}
-
-.floating-arrow{
-	position:fixed;
-	background: $color__brand-color1;
-}
-
-
-.gray-arrow{
-	position:relative;
-	background: transparent;
-}
-
-.gray-arrow:after {
-	border-top-color: #EDEDED;
-	z-index:20;	
-}
-
-.white-arrow-footer{
-	position:relative;
-	background:transparent;
-}
-
-.white-arrow-footer:after {
-	border-top-color: white;
-	z-index:20;	
-	top:0%
 }
 

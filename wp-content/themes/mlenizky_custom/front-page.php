@@ -11,7 +11,6 @@ get_header(); ?>
 	<div class="container intro-quote arrow-box white-arrow ">
 		<p><?php echo esc_html( CFS()->get('intro_quote')); ?></p>
 	</div>
-
 	<section class="skills  arrow-box gray-arrow ">
 		<div class="grid-3_sm-2_xs-1 large-screen ">
 			<?php $query = new WP_Query( array( 'post_type' => 'skill' ) ); ?>
@@ -21,11 +20,10 @@ get_header(); ?>
 				<h4><?php echo get_the_title(get_the_ID()); ?></h4>
 				<p><?php echo ( CFS()->get('skill_description')); ?></p> 
 			</div>
-		<?php endwhile; endif; wp_reset_postdata(); ?>
-	</div>
-</section>
-<section class="container about">
-
+			<?php endwhile; endif; wp_reset_postdata(); ?>
+		</div>
+	</section>
+	<section class="container about ">
 	<div id="headshot">
 		<?php echo get_the_post_thumbnail(get_the_ID()); ?>
 	</div> 

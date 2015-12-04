@@ -7,29 +7,22 @@
 
 get_header(); ?>
 
+<div class="single-project-container">
+	
+	<?php while ( have_posts() ) : the_post(); ?>
+	​
+	<h1 class="single-project-header"><?php echo $content = get_the_title(); ?></h1>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-​
-		<?php while ( have_posts() ) : the_post(); ?>
-​<div class="garbage" style= "background-image: url( <?php
-$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-echo $url ?>)">
-	<h1><?php echo get_the_title(get_the_ID()); ?></h1>
-
-
-<?php echo get_the_content( ) ?>
-	</div>	 
+	<?php echo get_the_content( ) ?>
 
 
 
-		<?php endwhile; // End of the loop. ?>
-​
-		</main><!-- #main -->
-	</div><!-- #primary -->
+<?php endwhile; // End of the loop. ?>
 ​
 
+​
 
+</div>
 
 
 

@@ -1,6 +1,6 @@
 
 p{
-	color: $color__background-header;
+	color: $color__brand-color1;
 	text-align: center;
 	margin:auto;
 	font-family: 'Roboto';
@@ -8,38 +8,16 @@ p{
 }
 
 .intro-quote{
-padding: 4rem 1rem 5rem 1rem;
-			  @include tablet {
-   max-width:70%;
-   margin:0 auto;
-   }
-		  @include desktop {
-   max-width:50%;
-   }
+	padding: 4rem 1rem ;
+	@include tablet {
+		max-width:70%;
+		margin:0 auto;
+	}
+	@include desktop {
+		max-width:600px;
+	}
 
 }
-
-
-// .arrow-box {
-// 	position: relative;
-// 	background: $color__brand-color1;
-// }
-// .arrow-box:after {
-// 	top: 100%;
-// 	left: 50%;
-// 	border: solid transparent;
-// 	content: " ";
-// 	height: 0;
-// 	width: 0;
-// 	position: absolute;
-// 	pointer-events: none;
-// 	border-color: rgba(136, 183, 213, 0);
-// 	border-top-color: $color__brand-color1;
-// 	border-width: 15px;
-// 	margin-left: -20px;
-// }
-
-
 
 
 .skills{
@@ -49,7 +27,7 @@ padding: 4rem 1rem 5rem 1rem;
 }
 
 .skills-container{
-transition: background-color 400ms ease-out 10ms; /*padding 0.8s linear;*/
+	transition: background-color 400ms ease-out 10ms; 
 	padding: 2rem;
 	overflow:wrap;
 	text-align: center;
@@ -61,79 +39,55 @@ transition: background-color 400ms ease-out 10ms; /*padding 0.8s linear;*/
 	}
 	p{
 		color:black;
-	
+
 	}
 	i{
 		font-size:3rem;
-		color: $color__background-header;
+		color: $color__brand-color1;
 	}
 }
 
 .skills-container:hover{
 	background-color: rgba(0, 124, 158, 1);
-	// padding:.5rem;
 	h4{
 		font-size: 1.4rem;
-		color:  #F8E71C;
+		color:  $color__brand-color2;
 	}
 	p{
 		color:white;
 	}
 }
 
-// .skills_flag{
-// 	background: #EDEDED;
-// }
-
-// .skills-image{
-// 	width:175px;
-// 	height:155px;
-// }
-// //below should be replaced with smaller code since it repeats the arrow code
-
-// .skills_flag:after {
-// 	top: 100%;
-// 	left: 50%;
-// 	border: solid transparent;
-// 	content: " ";
-// 	height: 0;
-// 	width: 0;
-// 	position: absolute;
-// 	pointer-events: none;
-// 	border-color: rgba(136, 183, 213, 0);
-// 	border-top-color: #EDEDED;
-// 	border-width: 15px;
-// 	margin-left: -20px;
-// }
-
-
 h4{
-	color: $color__background-header;
+	color: $color__brand-color1;
 }
 
 
 .about{
-text-align: center;
-padding: 4rem 1rem;
-		  @include tablet {
-   max-width:70%;
-   margin:0 auto;
-   }
+	text-align: center;
+	padding: 4rem 1rem;
+	@include tablet {
+		max-width:70%;
+		margin:0 auto;
+	}
+	@include desktop {
+		max-width:600px;
+	}
 }
 
 #headshot{
-border-radius:50%;
-width:200px;
-height:200px;
-overflow:hidden;
-margin:0 auto 2rem auto;
-text-align: center;
+	border-radius:50%;
+	width:200px;
+	height:200px;
+	overflow:hidden;
+	margin:0 auto 2rem auto;
+	text-align: center;
 
-		  @include tablet {
-   width:250px;
-   height: 250px;
-   margin-bottom: 2rem;
-   }
+	@include tablet {
+		width:250px;
+		height: 250px;
+		margin-bottom: 2rem;
+	}
 }
 
 .responsive-menu{

@@ -55,9 +55,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 @import "normalize";
 @import "gridlex";
-@import "fonts";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import url(https://fonts.googleapis.com/css?family=Roboto);
+@import "animations";
 @import "typography";
 @import "elements";
 @import "forms";
@@ -66,9 +66,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "widgets";
 @import "content";
 @import "media";
-// @import "animations";
 @import "page-templates";
 @import "header";
 @import "footer";
 @import "front-page";
-@import "archive-portfolio";

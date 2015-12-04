@@ -2,100 +2,15 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
 
+//CSS for the triangles between sections
 
-
-form{
-	border:none;
-	border-radius: 0px;
-}
-
-
-input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], textarea{
-	background-color: #EDEDED;
-	border:none;
-	border-radius: 0px;
-	width: 100%;
-	color:#007C9E;
-	padding: 1.5rem 0 3rem 1rem;
-	margin:.5rem 0;
-	font-size:36px;
-}
-
-input[type=submit]{
-	color:#007C9E;
-	padding: 1rem 2rem;
-	margin: 3rem;
-	font-size: 1.5rem;
-	box-shadow:none;
-	border-radius: 0px;
-}
-
-//Portfolio page
-
-
-
-.portfolio-container{
-margin: 1rem;
-h1{
-	color:#0198E1;
-	text-align: center;
-font-size:4rem;
-
-font-family: 'Open Sans'; }
-
-p{
-	color:black;
-	padding:1rem;
-}
-
-img{
-	display: block;
-    max-width:250px;
-    max-height:250px;
-    margin:0 3rem 1rem 3rem ;
-    
-}
-}
-
-
-.portfolio-tagline{
-	border-bottom: 4px solid yellow;
-}
-
-.portfolio-project{
-	text-align: center;
-	margin: 0 auto;
-	  @include tablet {
-display:flex;
-border-bottom: 2px solid yellow;
-}
-}
-.side-text{
-	p{
-		 @include tablet {
-	text-align: left;
-}
-	}
-}
-
-
-
-.container-large{
-	max-width: 1024px;
-	margin: 0 auto;
-
-}
-
-
-
-.arrow_box3 {
+.arrow-box {
 	position: relative;
-	
-	border-bottom: 3px solid #f50ae5;
+	background: $color__brand-color1;
+
 }
-.arrow_box3:after, .arrow_box3:before {
+.arrow-box:after {
 	top: 100%;
 	left: 50%;
 	border: solid transparent;
@@ -104,39 +19,272 @@ border-bottom: 2px solid yellow;
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-}
-
-.arrow_box3:after {
 	border-color: rgba(136, 183, 213, 0);
-	border-top-color: white;
-	border-width: 20px;
-	margin-left: -20px;
-}
-.arrow_box3:before {
-	border-color: rgba(245, 10, 229, 0);
-	border-top-color: #f50ae5;
+	border-top-color: $color__brand-color1;
 	border-width: 15px;
-	margin-left: -20px;
+	margin-left: -20px;	
+}
+
+.white-arrow{
+	position:relative;
+	background:transparent;
+}
+
+.white-arrow:after {
+	border-top-color: white;
+	z-index:20;	
+}
+
+.floating-arrow{
+	position:fixed;
+	background: $color__brand-color1;
+}
+
+.gray-arrow{
+	position:relative;
+	background: transparent;
+}
+
+.gray-arrow:after {
+	border-top-color: #EDEDED;
+	z-index:20;	
+}
+
+.white-arrow-footer{
+	position:relative;
+	background:transparent;
+}
+
+.white-arrow-footer:after {
+	border-top-color: white;
+	
+	top:0%
+}
+
+
+.arrow-line{
+	position: relative;
+	background:transparent;
+	border-bottom: 3px solid $color__brand-color2;
+}
+.arrow-line:after, .arrow-line:before {
+	top: 100%;
+	left: 48.75%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	@include tablet {
+		left:49%
+	}
+	@include desktop {
+		left: 49.25%
+	}
+}
+
+.arrow-line:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: #EDEDED;
+	border-width: 15px;
+	margin-left: -15px;
+}
+.arrow-line:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-top-color: $color__brand-color2;
+	border-width: 19px;
+	margin-left: -19px;
 }
 
 
 
+/* Contact Page */
+/***********************/
 
-// .arrow_box2 {
-// 	position: fixed;
-// 	background: rgba(0, 124, 158, 1);
-// }
-// .arrow_box2:after {
-// 	top: 100%;
-// 	left: 50%;
-// 	border: solid transparent;
-// 	content: " ";
-// 	height: 0;
-// 	width: 0;
-// 	position: absolute;
-// 	pointer-events: none;
-// 	border-color: rgba(136, 183, 213, 0);
-// 	border-top-color: rgba(0, 124, 158, 1);
-// 	border-width: 15px;
-// 	margin-left: -20px;
-// }
+//Make title of page disappear
+#post-13 header{
+	display:none;
+}
+
+
+//Format contact page headline
+.contact-heading h2{
+	text-align:center;
+	line-height: 1.25;
+	margin:0 auto;
+	span{
+		text-align: center;
+	}
+	@include desktop{
+		font-size:2.5rem;
+		max-width:800px;
+		margin-top: 2rem;
+	}
+}
+
+
+//Form styling
+form{
+	border:none;
+	border-radius: 0px;
+}
+input[type=text], input[type=email], input[type=url], input[type=password], input[type=search], textarea{
+	background-color: $color__brand-color3;
+	border:none;
+	border-radius: 0px;
+	width: 100%;
+	max-width:800px;
+	color:$color__brand-color1;
+	padding: 1.5rem 0 3rem 1rem;
+	margin:.5rem 0;
+	font-size:1.5rem;
+	font-family:'roboto';
+	&:focus{
+		outline:none;
+	}
+}
+
+input[type=submit]{
+	transition: background-color 400ms ease-out 10ms; 
+	color:$color__brand-color1;
+	padding: 1rem 2rem;
+	margin: 3rem;
+	font-size: 1.5rem;
+	box-shadow:none;
+	border-radius: 0px;
+	border:none ;
+	text-shadow:none ;
+}
+
+input[type=submit]:hover{
+	background-color:rgba(0, 124, 158, .4);
+	box-shadow:none
+}
+
+
+::-webkit-input-placeholder {
+	color: $color__brand-color1;
+} 
+
+textarea{
+	resize: none;
+}
+
+
+//Portfolio page
+
+//Change background of portfolio section
+.portfolio-list{
+	background-color: $color__brand-color3;
+
+}
+//Portfolio projects styling
+.portfolio-container{
+	margin: 0 1rem;
+	padding:4rem 2rem 2rem 2rem;
+
+	h1{
+		color:#0198E1;
+		text-align: center;
+		font-family: 'Open Sans'; 
+		font-size:2.5rem;
+		a{
+			text-decoration: none;
+			&:visited{
+				color:$color__brand-color1;
+			}
+		}
+		@include tablet {
+			font-size:4rem;
+		}
+
+		p{
+			color:black;
+			padding:1rem;
+
+		}
+
+		img{
+			display: block;
+			max-width:300px;
+			max-height:300px;
+			padding-bottom: 2rem;
+			@include tablet {
+				margin:0 3rem 1rem 3rem ;
+
+			}
+
+		}
+	}
+}
+
+.project-title{
+	padding-bottom:2rem;
+	margin:0;
+	text-transform:uppercase;
+}
+
+.project-info{
+	text-align: center;
+	margin: 0 auto;
+	img{
+		@include tablet {
+			max-width: 250px;
+			max-height:250px;
+		}
+			@include desktop {
+			max-width:300px;
+			max-height: 300px;
+		}
+	}
+	@include tablet {
+		display:flex;
+		justify-content:space-around;
+	}
+	@include desktop{
+		max-width:700px;
+	}
+}
+.project-text{
+	max-width: 300px;
+	margin:0 auto;
+	p{
+		padding-top:1rem;
+		color:black;
+		@include tablet {
+			text-align: justify;
+			padding:0;
+
+		}
+
+	}
+}
+
+h4{
+	font-family:'open sans';
+	margin:.5rem 0;
+	font-size:1.2rem;
+	text-decoration: none;
+}
+
+
+.portfolio-link{
+	text-decoration:none;
+}
+
+
+
+//Single Project Page//
+
+.single-project-container{
+	max-width: 800px;
+	margin:0 auto;
+	padding: 3rem;
+}
+.single-project-header{
+		color:#0198E1;
+		text-align: center;
+		font-family: 'Open Sans'; 
+		font-size:2.5rem;
+}
