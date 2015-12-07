@@ -7,6 +7,8 @@ p{
 	font-weight: normal;
 }
 
+
+// Front-page intro quote section
 .intro-quote{
 	padding: 4rem 1rem ;
 	@include tablet {
@@ -16,13 +18,11 @@ p{
 	@include desktop {
 		max-width:600px;
 	}
-
 }
 
-
+// Front-page skills section
 .skills{
-	background-color:#EDEDED;
-	
+	background-color:$color__brand-color3;
 	padding:5rem 3rem;
 }
 
@@ -47,6 +47,10 @@ p{
 	}
 }
 
+h4{
+	color: $color__brand-color1;
+}
+
 .skills-container:hover{
 	background-color: rgba(0, 124, 158, 1);
 	h4{
@@ -58,8 +62,25 @@ p{
 	}
 }
 
-h4{
-	color: $color__brand-color1;
+.skills-image{
+	height:160px;
+	width:200px;
+}
+
+
+// Front-page about section
+#headshot{
+	border-radius:50%;
+	width:200px;
+	height:200px;
+	overflow:hidden;
+	margin:0 auto 2rem auto;
+	text-align: center;
+	@include tablet {
+		width:250px;
+		height: 250px;
+		margin-bottom: 2rem;
+	}
 }
 
 
@@ -75,24 +96,4 @@ h4{
 	}
 }
 
-#headshot{
-	border-radius:50%;
-	width:200px;
-	height:200px;
-	overflow:hidden;
-	margin:0 auto 2rem auto;
-	text-align: center;
 
-	@include tablet {
-		width:250px;
-		height: 250px;
-		margin-bottom: 2rem;
-	}
-}
-
-.responsive-menu{
-	ul{
-		margin:0;
-		padding:0;
-	}
-}

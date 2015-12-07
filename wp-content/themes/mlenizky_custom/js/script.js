@@ -1,35 +1,32 @@
 
+
+
+
 // jQuery(document).ready(function($) {
 
-// $('a').click(function(event) {
-//   if ( $( "#DivB" ).is( ":visible" ) ) {
-//    $( "#DivB" ).slideUp(700).then(
-//    $("body").fadeOut(2000);).then(
-//    $("body").fadeIn(2000);)
-//   } else {
-    
-//     $( "#DivB" ).slideDown( "slow" );
-    
-//   }
-// });
-// });
+
+// $('body').css('display', 'none');
+
+// $('body').fadeIn(200);
 
 
 
-// 	 { 
+// $('.navigation a').click(function(event) {
 
-// 		event.preventDefault();
+// event.preventDefault();
 
-// 		newLocation = this.href;
-// 		$( "#DivB" ).slideUp(1000);
-// 		$('body').fadeOut(2000, newpage);
+// newLocation = this.href;
 
-// 	});
+// $('body').fadeOut(200, newpage);
 
-// 	function newpage() {
-
-// 		window.location = newLocation;
-
-// 	}
 
 // });
+
+// function newpage() {
+
+// window.location = newLocation;
+
+// }
+
+// });
+

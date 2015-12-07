@@ -1278,6 +1278,120 @@ th {
   [class*="grid"] > [push-right*="_xs-11"] {
     margin-right: 91.66666667%; } }
 
+/*
+ * Keyframes
+ */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+.m-scene {
+  /** Basic styles for an animated element */
+  /** An element that fades in */
+  /** An element that fades in and slides up */
+  /** An element that fades in and slides from the right */ }
+  .m-scene .scene_element {
+    -webkit-animation-duration: 0.25s;
+            animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; }
+  .m-scene .scene_element--fadein {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn; }
+  .m-scene .scene_element--fadeinup {
+    -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp; }
+  .m-scene .scene_element--fadeinright {
+    -webkit-animation-name: fadeInRight;
+            animation-name: fadeInRight; }
+
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+.m-scene {
+  /** Reverse "exit" animations */ }
+  .m-scene .scene_element {
+    -webkit-animation-duration: 0.25s;
+            animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; }
+  .m-scene .scene_element--fadein {
+    -webkit-animation-name: fadeIn;
+            animation-name: fadeIn; }
+  .m-scene .scene_element--fadeinup {
+    -webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp; }
+  .m-scene .scene_element--fadeinright {
+    -webkit-animation-name: fadeInRight;
+            animation-name: fadeInRight; }
+  .m-scene.is-exiting .scene_element {
+    -webkit-animation-direction: alternate-reverse;
+            animation-direction: alternate-reverse; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -2125,6 +2239,9 @@ p {
     font-size: 3rem;
     color: #007C9E; }
 
+h4 {
+  color: #007C9E; }
+
 .skills-container:hover {
   background-color: #007c9e; }
   .skills-container:hover h4 {
@@ -2133,19 +2250,9 @@ p {
   .skills-container:hover p {
     color: white; }
 
-h4 {
-  color: #007C9E; }
-
-.about {
-  text-align: center;
-  padding: 4rem 1rem; }
-  @media (min-width: 600px) {
-    .about {
-      max-width: 70%;
-      margin: 0 auto; } }
-  @media (min-width: 801px) {
-    .about {
-      max-width: 600px; } }
+.skills-image {
+  height: 160px;
+  width: 200px; }
 
 #headshot {
   border-radius: 50%;
@@ -2160,6 +2267,13 @@ h4 {
       height: 250px;
       margin-bottom: 2rem; } }
 
-.responsive-menu ul {
-  margin: 0;
-  padding: 0; }
+.about {
+  text-align: center;
+  padding: 4rem 1rem; }
+  @media (min-width: 600px) {
+    .about {
+      max-width: 70%;
+      margin: 0 auto; } }
+  @media (min-width: 801px) {
+    .about {
+      max-width: 600px; } }
