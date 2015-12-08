@@ -47,7 +47,7 @@ header {
 		margin-top:.65rem;
 		font-weight: 400;
 		font-size: 1.1rem;
-		font-family: 'Open Sans';
+		font-family: $font__heading;
 		@include desktop {
 			margin-top: .65rem;
 		}
@@ -86,7 +86,7 @@ header {
 #site-navigation a{
 	display:none;
 	text-decoration: none;
-	font-family: 'Open Sans';
+	font-family: $font__heading;
 	font-size: 1.1rem;
 	color:white;
 	display:block;
@@ -129,7 +129,7 @@ header {
 
 .site-title{
 	color:$color__brand-color2;
-	font-family: 'Open Sans';
+	font-family: $font__heading;
 	font-weight:600;
 	padding: 8rem 0 8rem 0;
 	@include desktop {

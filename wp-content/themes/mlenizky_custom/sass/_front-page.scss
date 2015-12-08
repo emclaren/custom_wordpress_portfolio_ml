@@ -3,7 +3,7 @@ p{
 	color: $color__brand-color1;
 	text-align: center;
 	margin:auto;
-	font-family: 'Roboto';
+	font-family: $font__main;
 
 	
 }
@@ -40,7 +40,7 @@ p{
 	h4{
 		margin:1rem;
 		font-size:1.3rem;
-		font-family: 'open sans'
+		font-family: $font__heading;
 	}
 	p{
 		color:black;

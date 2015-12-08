@@ -144,7 +144,7 @@ input[type=text], input[type=email], input[type=url], input[type=password], inpu
 	padding: 1.5rem 0 3rem 1rem;
 	margin:.5rem 0;
 	font-size:1.5rem;
-	font-family:'roboto';
+	font-family:$font__main;
 	&:focus{
 		outline:none;
 	}
@@ -267,7 +267,7 @@ textarea{
 }
 
 h4{
-	font-family:'open sans';
+	font-family:$font__heading;
 	margin:.5rem 0;
 	font-size:1.2rem;
 	text-decoration: none;
@@ -290,6 +290,6 @@ h4{
 .single-project-header{
 		color:#0198E1;
 		text-align: center;
-		font-family: 'Open Sans'; 
+		font-family: $font__heading; 
 		font-size:2.5rem;
 }

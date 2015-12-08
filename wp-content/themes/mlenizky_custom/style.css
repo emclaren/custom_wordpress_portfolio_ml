@@ -1401,7 +1401,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "roboto", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -1929,7 +1929,7 @@ input[type=text], input[type=email], input[type=url], input[type=password], inpu
   padding: 1.5rem 0 3rem 1rem;
   margin: .5rem 0;
   font-size: 1.5rem;
-  font-family: 'roboto'; }
+  font-family: "roboto", sans-serif; }
   input[type=text]:focus, input[type=email]:focus, input[type=url]:focus, input[type=password]:focus, input[type=search]:focus, textarea:focus {
     outline: none; }
 
@@ -2025,7 +2025,7 @@ textarea {
         padding: 0; } }
 
 h4 {
-  font-family: 'open sans';
+  font-family: "open sans", sans-serif;
   margin: .5rem 0;
   font-size: 1.2rem;
   text-decoration: none; }
@@ -2041,7 +2041,7 @@ h4 {
 .single-project-header {
   color: #0198E1;
   text-align: center;
-  font-family: 'Open Sans';
+  font-family: "open sans", sans-serif;
   font-size: 2.5rem; }
 
 header {
@@ -2090,7 +2090,7 @@ header {
     margin-top: .65rem;
     font-weight: 400;
     font-size: 1.1rem;
-    font-family: 'Open Sans'; }
+    font-family: "open sans", sans-serif; }
     @media (min-width: 801px) {
       .home-link h3 {
         margin-top: .65rem; } }
@@ -2121,7 +2121,7 @@ header {
 #site-navigation a {
   display: none;
   text-decoration: none;
-  font-family: 'Open Sans';
+  font-family: "open sans", sans-serif;
   font-size: 1.1rem;
   color: white;
   display: block; }
@@ -2146,7 +2146,7 @@ header {
 
 .site-title {
   color: #FAF292;
-  font-family: 'Open Sans';
+  font-family: "open sans", sans-serif;
   font-weight: 600;
   padding: 8rem 0 8rem 0; }
   @media (min-width: 801px) {
@@ -2170,7 +2170,7 @@ span {
   display: block; }
 
 h2 {
-  font-family: 'open sans';
+  font-family: "open sans", sans-serif;
   color: #007C9E;
   text-align: center;
   width: 100%;
@@ -2228,7 +2228,7 @@ p {
   color: #007C9E;
   text-align: center;
   margin: auto;
-  font-family: 'Roboto'; }
+  font-family: "roboto", sans-serif; }
 
 .intro-quote {
   padding: 4rem 1rem;
@@ -2257,7 +2257,7 @@ p {
   .skills-container h4 {
     margin: 1rem;
     font-size: 1.3rem;
-    font-family: 'open sans'; }
+    font-family: "open sans", sans-serif; }
   .skills-container p {
     color: black; }
   .skills-container i {

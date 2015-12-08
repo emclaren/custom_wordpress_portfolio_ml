@@ -10,10 +10,7 @@ $tablet-width: 600px;
 $desktop-width: 801px;
 $large-screen-width:1024px;
 
-// Colors
-
-$color__background-body: #fff;
-$color__text-main: #404040;
+// Default Colors
 
 $color__background-screen: #f1f1f1;
 $color__text-screen: #21759b;
@@ -27,6 +24,9 @@ $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
+//Custom Colors
+$color__background-body: #fff;
+$color__text-main: #404040;
 $color__background-header:#007C9E;
 $color__text-header: #fff;
 $color__brand-color-header: #F8E71C;
@@ -36,8 +36,9 @@ $color__brand-color2:#FAF292;  //brand yellow
 $color__brand-color3: #EDEDED;  //brand grey
 
 // Typography
+$font__heading: 'open sans', sans-serif;
+$font__main: 'roboto', sans-serif;
 
-$font__main: sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
