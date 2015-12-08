@@ -20,9 +20,15 @@
 		<!-- Fixed Navigation Bar -->
 		<div class="fixed-nav-bar  arrow-box floating-arrow" id="nav-bar">
 			<nav id="site-navigation" class="navigation " role="navigation">
-				<a href="about" class="home-link "> 
-					<h3>Michael J.P. Lenizky</h3>
+			
+				<a href="about" > 
+					<div class="home-link ">
+						<img src="http://michaellenizky.
+						com/wp-content/uploads/2015/12/MIkes-Logo-white.png">
+						<h3>Michael J.P. Lenizky</h3>
+					</div>
 				</a>
+				
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav>
 		</div>
