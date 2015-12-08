@@ -2,7 +2,7 @@
 /**
  * The template for displaying all pages.
  * Template Name: contact page
- * @package mlezinsky_custom_theme
+ * @package mlenizky_custom
  */
 
 get_header(); ?>

@@ -1,12 +1,1 @@
-<?php
-/**
- * The main template file.
- *
- * @package RED_Starter_Theme
- */
-
-get_header(); ?>
-test
-	
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php wp_redirect(site_url(), 301); exit(); ?>

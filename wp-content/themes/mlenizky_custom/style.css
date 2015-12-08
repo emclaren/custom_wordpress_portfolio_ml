@@ -43,8 +43,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,400,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,400);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -1865,7 +1865,7 @@ object {
 .arrow-line {
   position: relative;
   background: transparent;
-  border-bottom: 3px solid #F8E71C; }
+  border-bottom: 3px solid #FAF292; }
 
 .arrow-line:after, .arrow-line:before {
   top: 100%;
@@ -1885,15 +1885,18 @@ object {
 
 .arrow-line:after {
   border-color: rgba(136, 183, 213, 0);
-  border-top-color: #EDEDED;
+  border-top-color: white;
   border-width: 15px;
   margin-left: -15px; }
 
 .arrow-line:before {
   border-color: rgba(194, 225, 245, 0);
-  border-top-color: #F8E71C;
+  border-top-color: #FAF292;
   border-width: 19px;
   margin-left: -19px; }
+
+.arrow-line:last-child {
+  border: none; }
 
 /* Contact Page */
 /***********************/
@@ -1951,21 +1954,19 @@ input[type=submit]:hover {
 textarea {
   resize: none; }
 
-.portfolio-list {
-  background-color: #EDEDED; }
-
 .portfolio-container {
   margin: 0 1rem;
   padding: 4rem 2rem 2rem 2rem; }
   .portfolio-container h1 {
-    color: #0198E1;
+    color: #007C9E;
     text-align: center;
     font-family: 'Open Sans';
     font-size: 2.5rem; }
     .portfolio-container h1 a {
+      color: #0198E1;
       text-decoration: none; }
       .portfolio-container h1 a:visited {
-        color: #007C9E; }
+        color: #0198E1; }
     @media (min-width: 600px) {
       .portfolio-container h1 {
         font-size: 4rem; } }
@@ -1980,6 +1981,9 @@ textarea {
       @media (min-width: 600px) {
         .portfolio-container h1 img {
           margin: 0 3rem 1rem 3rem; } }
+
+.portfolio-container:last-child {
+  border: none; }
 
 .project-title {
   padding-bottom: 2rem;
@@ -2017,7 +2021,7 @@ textarea {
     color: black; }
     @media (min-width: 600px) {
       .project-text p {
-        text-align: justify;
+        text-align: left;
         padding: 0; } }
 
 h4 {
@@ -2042,7 +2046,7 @@ h4 {
 
 header {
   background-color: #007C9E;
-  color: #F8E71C; }
+  color: #FAF292; }
 
 .container {
   margin: 0 1rem; }
@@ -2097,9 +2101,13 @@ header {
   .navigation ul li {
     display: none;
     text-decoration: none; }
+    .navigation ul li:hover {
+      border-bottom: #FAF292 2px solid; }
     @media (min-width: 801px) {
       .navigation ul li {
         display: inline-block; } }
+  .navigation ul:hover .current_page_item {
+    border-bottom: none; }
 
 #site-navigation a {
   display: none;
@@ -2111,41 +2119,48 @@ header {
   @media (min-width: 801px) {
     #site-navigation a {
       display: inline-block;
-      margin-top: 1rem; }
-      #site-navigation a:hover {
-        font-size: 1.22rem; } }
+      margin-top: 1rem; } }
 
 @media (min-width: 801px) {
   .current_page_item {
-    border-bottom: 2px #F8E71C solid; } }
+    border-bottom: 2px #FAF292 solid; }
+    .current_page_item:hover {
+      border-bottom: none; } }
 
 .fixed-nav-bar {
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 85px;
   background-color: #007C9E; }
 
 #nav-bar {
   z-index: 200; }
 
-span {
-  display: block; }
-
 .site-title {
-  color: #F8E71C;
+  color: #FAF292;
   font-family: 'Open Sans';
   font-weight: 600;
   padding: 8rem 0 8rem 0; }
   @media (min-width: 801px) {
     .site-title {
       font-size: 2.5rem;
-      padding: 5rem 0; } }
+      padding: 5rem 0;
+      height: 500px;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 footer {
   width: 100%;
-  background-color: #F8E71C;
+  background-color: #FAF292;
   padding-bottom: 1rem; }
+
+span {
+  display: block; }
 
 h2 {
   font-family: 'open sans';
@@ -2206,18 +2221,21 @@ p {
   color: #007C9E;
   text-align: center;
   margin: auto;
-  font-family: 'Roboto';
-  font-weight: normal; }
+  font-family: 'Roboto'; }
 
 .intro-quote {
-  padding: 4rem 1rem; }
+  padding: 4rem 1rem;
+  font-size: 1.15rem;
+  font-weight: 100; }
   @media (min-width: 600px) {
     .intro-quote {
       max-width: 70%;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      font-size: 1.25rem; } }
   @media (min-width: 801px) {
     .intro-quote {
-      max-width: 600px; } }
+      max-width: 600px;
+      font-size: 1.5rem; } }
 
 .skills {
   background-color: #EDEDED;
@@ -2242,17 +2260,8 @@ p {
 h4 {
   color: #007C9E; }
 
-.skills-container:hover {
-  background-color: #007c9e; }
-  .skills-container:hover h4 {
-    font-size: 1.4rem;
-    color: #F8E71C; }
-  .skills-container:hover p {
-    color: white; }
-
 .skills-image {
-  height: 160px;
-  width: 200px; }
+  height: 80px; }
 
 #headshot {
   border-radius: 50%;
@@ -2269,11 +2278,15 @@ h4 {
 
 .about {
   text-align: center;
-  padding: 4rem 1rem; }
+  padding: 4rem 1rem;
+  font-size: 1.15rem;
+  font-weight: 100; }
   @media (min-width: 600px) {
     .about {
       max-width: 70%;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      font-size: 1.25rem; } }
   @media (min-width: 801px) {
     .about {
-      max-width: 600px; } }
+      max-width: 600px;
+      font-size: 1.5rem; } }

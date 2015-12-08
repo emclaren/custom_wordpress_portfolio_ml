@@ -2,7 +2,7 @@
 /**
  * The template for displaying archive pages.
  * Template Name: Single Project
- * @package RED_Starter_Theme
+ * @package mlenizky_custom
  */
 
 get_header(); ?>
@@ -13,7 +13,7 @@ get_header(); ?>
 	​
 	<h1 class="single-project-header"><?php echo $content = get_the_title(); ?></h1>
 
-	<?php echo get_the_content( ) ?>
+	<?php echo the_content( ) ?>
 
 
 

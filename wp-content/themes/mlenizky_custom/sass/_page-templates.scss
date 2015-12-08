@@ -86,7 +86,7 @@
 
 .arrow-line:after {
 	border-color: rgba(136, 183, 213, 0);
-	border-top-color: #EDEDED;
+	border-top-color: white;
 	border-width: 15px;
 	margin-left: -15px;
 }
@@ -95,6 +95,11 @@
 	border-top-color: $color__brand-color2;
 	border-width: 19px;
 	margin-left: -19px;
+}
+
+.arrow-line:last-child{
+	border:none;
+	
 }
 
 
@@ -174,25 +179,21 @@ textarea{
 
 //Portfolio page
 
-//Change background of portfolio section
-.portfolio-list{
-	background-color: $color__brand-color3;
-
-}
 //Portfolio projects styling
 .portfolio-container{
 	margin: 0 1rem;
 	padding:4rem 2rem 2rem 2rem;
 
 	h1{
-		color:#0198E1;
+		color:$color__brand-color1;
 		text-align: center;
 		font-family: 'Open Sans'; 
 		font-size:2.5rem;
 		a{
+			color:#0198E1;
 			text-decoration: none;
 			&:visited{
-				color:$color__brand-color1;
+				color:#0198E1;
 			}
 		}
 		@include tablet {
@@ -217,6 +218,10 @@ textarea{
 
 		}
 	}
+}
+
+.portfolio-container:last-child{
+	border:none;
 }
 
 .project-title{
@@ -253,7 +258,7 @@ textarea{
 		padding-top:1rem;
 		color:black;
 		@include tablet {
-			text-align: justify;
+			text-align:left;
 			padding:0;
 
 		}

@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  * 
- * @package mlenizky_custom_theme
+ * @package mlenizky_custom
  */
 ?><!DOCTYPE html>
 

@@ -60,10 +60,15 @@ header {
 	li{
 		display:none;
 		text-decoration: none;
+		&:hover{
+			border-bottom: $color__brand-color2 2px solid;
+		}
 		@include desktop {
 			display:inline-block;
 		}
 	}
+
+	&:hover .current_page_item { border-bottom: none; } 
 }
 
 #site-navigation a{
@@ -76,16 +81,23 @@ header {
 	@include desktop {
 		display:inline-block;
 		margin-top:1rem;
-		&:hover{
-			font-size: 1.22rem;
-		}
+		
+
 	}
+}
+
+
+#site-navigation li:hover{
+
 }
 
 //Yellow border on selected page
 .current_page_item{
 	@include desktop {
 		border-bottom: 2px $color__brand-color2 solid;
+		&:hover{
+			border-bottom:none;
+		}
 	}
 }
 
@@ -94,7 +106,7 @@ header {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 60px;
+	height: 85px;
 	background-color: $color__brand-color1;
 
 }
@@ -105,9 +117,7 @@ header {
 
 
 //Main Site Title Styling
-span{
-	display: block;
-}
+
 
 .site-title{
 	color:$color__brand-color2;
@@ -117,6 +127,9 @@ span{
 	@include desktop {
 		font-size:2.5rem;
 		padding: 5rem 0;
+		height:500px;
+		display:flex;
+		align-items:center;
 	}
 }
 
