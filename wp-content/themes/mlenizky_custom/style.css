@@ -2115,6 +2115,9 @@ header {
   .navigation ul:hover .current_page_item {
     border-bottom: none; }
 
+.current_page_item:hover {
+  border-bottom: 2px #FAF292 solid !important; }
+
 #site-navigation a {
   display: none;
   text-decoration: none;
@@ -2129,9 +2132,7 @@ header {
 
 @media (min-width: 801px) {
   .current_page_item {
-    border-bottom: 2px #FAF292 solid; }
-    .current_page_item:hover {
-      border-bottom: none; } }
+    border-bottom: 2px #FAF292 solid; } }
 
 .fixed-nav-bar {
   top: 0;

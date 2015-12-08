@@ -75,10 +75,13 @@ header {
 		}
 	}
 	&:hover .current_page_item { 
-		border-bottom: none; 
+		border-bottom: none;
 	} 
 }
-
+.current_page_item:hover {
+		border-bottom:2px $color__brand-color2 solid !important
+	
+}
 
 #site-navigation a{
 	display:none;
@@ -100,11 +103,11 @@ header {
 .current_page_item{
 	@include desktop {
 		border-bottom: 2px $color__brand-color2 solid;
-		&:hover{
-			border-bottom:none;
-		}
 	}
 }
+	
+
+
 
 //Keep nav bar fixed at top of page
 .fixed-nav-bar {
