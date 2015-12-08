@@ -20,7 +20,7 @@ get_header(); ?>
 			</a>
 			<div class="project-text">
 				<p><?php echo ( CFS()->get('project_description')); ?></p> 
-				<a href="<?php echo get_permalink(get_the_ID()); ?>" class="portfolio-link"> 
+				<a href="<?php echo ( CFS()->get('website_url')); ?>" class="portfolio-link"> 
 					<h4>Read the Case Study </h4>
 				</a>
 			</div>
