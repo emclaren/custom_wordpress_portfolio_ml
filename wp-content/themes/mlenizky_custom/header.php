@@ -23,8 +23,7 @@
 			
 				<a href="about" > 
 					<div class="home-link ">
-						<img src="http://michaellenizky.
-						com/wp-content/uploads/2015/12/MIkes-Logo-white.png">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/Mikes-Logo-white.png?>" alt="logo">
 						<h3>Michael J.P. Lenizky</h3>
 					</div>
 				</a>
