@@ -7,7 +7,6 @@
 
 get_header(); ?>
 
-<div id="DivB">
 	<div class="container intro-quote arrow-box white-arrow ">
 		<p><?php echo esc_html( CFS()->get('intro_quote')); ?></p>
 	</div>
@@ -29,7 +28,6 @@ get_header(); ?>
 	</div> 
 	<p><?php echo esc_html( CFS()->get('about_me')); ?></p>
 </section>
-</div>
 
 <?php
 
