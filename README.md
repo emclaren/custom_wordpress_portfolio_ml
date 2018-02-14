@@ -1,1 +1,1 @@
-Custom Wordpress theme for M. Lenizky.
+Customized wordpress theme.
